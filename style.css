@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    width: 100vw; 
+    height: 100vh;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container{
+    height: 100%;
+    width: 100%;
+}
+
+.hero{
+    height: 100%;
+    width: 100%;
+    background-image: url('./images/dogriver.jpg!d');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+}
+.searchBar{
+    height: 30%;
+    width: 100%;
+    z-index: 1;
+    color: aliceblue;
+    font-size: 5rem;
+}
+#searchBar{
+    width: 20%;
+    height: 15%;
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    background-color: rgba(221, 209, 209, 0.226);
+}
+.mainPage{
+    height: 100%;
+    width: 100%;
+    background-image: url('./images/airship.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;}
+.btn{
+    background-image: url(./images/DonniScarf.png);
+    width: 20%;
+}
