@@ -1,7 +1,5 @@
 const data = `www.google.com/q=london.com`
 const weather = {};
-// weather.request = new XMLHttpRequest()
-// weather.request.open('GET', 'api.openweathermap.org/data/2.5/forecast?q=${city name},{country code}', true)
 weather.start=()=>{
     searchWeather()
     shuffleImages()
@@ -21,9 +19,6 @@ const searchWeather = ()=>{
                 let data = response.json()
             return data;
         })
-            // .then(function(data){
-            //     weather.temperature.value = data.main.temp
-            // })
             .then(blob =>{
                 let feelsLike = blob.main.feels_like -273.15;
                 let temp = blob.main.temp -273.15;
@@ -47,7 +42,7 @@ const searchWeather = ()=>{
 
 const shuffleImages = () =>{
     
-        var random= Math.floor(Math.random() * 6) + 0;
+        var random= Math.floor(Math.random() * 15) + 0;
         var bigSize = ["url('./images/backImg/1.jpeg')",
                        "url('./images/backImg/2.jpeg')",
                        "url('./images/backImg/3.jpeg')",
