@@ -16,17 +16,19 @@
         <div class="wrapper hero">
             <div class="wrapper searchBar">City Weather
                 <input id="searchBar" type="text" placeholder="Enter a City">
-                <input class="btn" value="submit"></input>
+                <button class="btn" value="submit"></button>
             </div>
         </div>
         <div class="wrapper mainPage">
-            <div class="cityName"></div>
-            <div class="currentTime"></div>
-            <div class="weeklyWeather"></div>
-
+            <div class="page cityName"></div>
+            <div class="page temp"></div>
+            <div class="page feelsLike"></div>
+            <div class="page weatherDescription"></div>
+            <div class="page windSpeed"></div>
+            <div class="page humidity"></div>
+            <div class="page error"></div>
+            <div class="page reSearch" onClick="document.location.reload(true)">search again</div>
         </div>
-
-
         
     </div>
 
